@@ -1,0 +1,17 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+# renovate: datasource=github-releases depName=gnleong/snyk-config
+snyk_policy_version: 0.0.1
+version: v1.25.0
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:tough-cookie:20160722':
+    - '*':
+        reason: None Given
+        expires: 2023-04-30T00:00:00.000Z
+        created: 2022-08-25T05:43:09.204Z
+  SNYK-ALPINE316-ZLIB-2976176:
+    - '*':
+        reason: None Given
+        expires: 2023-04-30T00:00:00.000Z
+        created: 2022-08-25T05:57:01.413Z
+patch: {}
